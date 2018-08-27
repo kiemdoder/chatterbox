@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>628154999488-pu2fiivatu7erc8tlth7g94hs2nale7k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.628154999488-pu2fiivatu7erc8tlth7g94hs2nale7k</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCGvgRbCAZ0wSwCntEsyKwVZJhnz6jmlrk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>628154999488</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.draadkar.ChatterBox</string>
+	<key>PROJECT_ID</key>
+	<string>chatterbox-d2f4d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chatterbox-d2f4d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:628154999488:ios:a3c2b3e8f2d9580a</string>
+	<key>DATABASE_URL</key>
+	<string>https://chatterbox-d2f4d.firebaseio.com</string>
+</dict>
+</plist>
