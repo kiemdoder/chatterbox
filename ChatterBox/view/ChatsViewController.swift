@@ -12,10 +12,12 @@ class ChatsViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    navigationController?.navigationBar.prefersLargeTitles = true
   }
 
   @IBAction func createNewChat(_ sender: Any) {
-    let userVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "usersTableView") as! UsersTableViewController
+    let userVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userTableView") as! UsersTableViewController
     navigationController?.pushViewController(userVC, animated: true)
   }
 }

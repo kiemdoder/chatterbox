@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C18F9F02DD89DB709C97D63 /* Pods_ChatterBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815AE5822D9F45BB19EA55A5 /* Pods_ChatterBox.framework */; };
+		15412C3D2139723400CDC375 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15412C3C2139723400CDC375 /* ProfileViewController.swift */; };
 		15494A742129A44E0068F279 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15494A732129A44E0068F279 /* SettingsTableViewController.swift */; };
 		1556589A2134807700C4E109 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155658992134807700C4E109 /* ChatsViewController.swift */; };
 		156217F1211B877A009A1284 /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156217F0211B877A009A1284 /* FinishRegistrationViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15412C3C2139723400CDC375 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		15494A732129A44E0068F279 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		155658992134807700C4E109 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		156217F0211B877A009A1284 /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				15856710212C9ED30067920F /* UserCell.swift */,
 				1599CFAD21318B390053A2BC /* UsersTableViewController.swift */,
 				155658992134807700C4E109 /* ChatsViewController.swift */,
+				15412C3C2139723400CDC375 /* ProfileViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				15AC935521139DCC00603A19 /* Camera.swift in Sources */,
 				1599CFAE21318B390053A2BC /* UsersTableViewController.swift in Sources */,
 				15AC935421139DCC00603A19 /* HelperFunctions.swift in Sources */,
+				15412C3D2139723400CDC375 /* ProfileViewController.swift in Sources */,
 				1556589A2134807700C4E109 /* ChatsViewController.swift in Sources */,
 				15AC935821139DCC00603A19 /* FUser.swift in Sources */,
 				15AC934A2113892500603A19 /* WelcomeViewController.swift in Sources */,
