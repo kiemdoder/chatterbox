@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import ProgressHUD
 
-class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
+class UsersTableViewController: UITableViewController, UISearchResultsUpdating, UserCellDelegate {
 
   @IBOutlet weak var headerView: UIView!
   @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
@@ -148,6 +148,7 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
       user = users![indexPath.row]
     }
     cell.generateCellWith(fUser: user, indexPath: indexPath)
+    cell.delegate = self
 
     return cell
   }
@@ -171,7 +172,29 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
   override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
     return index
   }
+
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+  }
   
+  //MARK: - User cell delegate
+
+  func didTapAvatarImage(indexPath: IndexPath) {
+    let profileVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userProfile") as! ProfileViewController
+
+    var user: FUser
+    if searchController.isActive && searchController.searchBar.text != "" {
+      user = filteredUsers[indexPath.row]
+    } else {
+      let sectionTitle = sectionTitleList[indexPath.section]
+      let users = allUsersGrouped[sectionTitle]
+      user = users![indexPath.row]
+    }
+
+    profileVC.user = user
+    navigationController?.pushViewController(profileVC, animated: true)
+  }
+
   //MARK: - Helper functions
 
   fileprivate func splitDataIntoSections() {

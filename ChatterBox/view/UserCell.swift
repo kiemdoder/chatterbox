@@ -8,14 +8,18 @@
 
 import UIKit
 
+protocol UserCellDelegate {
+  func didTapAvatarImage(indexPath: IndexPath)
+}
+
 class UserCell: UITableViewCell {
 
   @IBOutlet weak var avatar: UIImageView!
   @IBOutlet weak var name: UILabel!
 
   var indexPath: IndexPath!
-
   var tapGestureRecognizer = UITapGestureRecognizer()
+  var delegate: UserCellDelegate?
 
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -26,7 +30,7 @@ class UserCell: UITableViewCell {
   }
 
   @objc func avatarTap() {
-
+    delegate?.didTapAvatarImage(indexPath: indexPath)
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
